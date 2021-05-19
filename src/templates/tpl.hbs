@@ -1,0 +1,23 @@
+<div class='country_card'>
+
+  <div class='card_container'>
+
+    <div class='card_info'>
+      <h1 class='card_name'>{{name}}</h1>
+      <h3 class='capital'><strong>Capital:</strong> {{capital}}</h3>
+      <h3 class='population'><strong>Population: </strong>{{population}}</h3>
+      <ul class='languages_list'>
+        <p class='languages'><strong>Languages: </strong> </p>
+        {{#each languages}}
+          <li class='card_text'>{{iso639_1}}</li>
+          <li class='card_text'>{{iso639_2}}</li>
+          <li class='card_text'>{{name}}</li>
+          <li class='card_text'>{{nativeName}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  <div class='img_container'>
+    <img class='flag_img' src='{{flag}}' alt='' />
+  </div>
+</div>
